@@ -36,10 +36,20 @@ public class Pattern
                 System.out.println();
             }
         }
+        private static void pattern5(int N) {
+            System.out.println("Printing '*'-pattern reversed right-traingle of size-"+N+"..");
+            for(int i=N-1;i>=0;i--) {
+                for(int j=0;j<=i;j++) {
+                    System.out.print("* ");
+                }
+                System.out.println();
+            }
+        }
     public static void main(String[] args) {
         pattern1(5);
         pattern2(5);
         pattern3(5);
         pattern4(5);
+        pattern5(5);
     }
 }
