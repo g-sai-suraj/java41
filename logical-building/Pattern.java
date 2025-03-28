@@ -54,6 +54,22 @@ public class Pattern
             System.out.println();
         }
     }
+    private static void pattern7(int N) {
+        System.out.println("Printing *-Pattern rhombus of size-"+N+"..");
+        for(int i=0;i<N;i++) {
+            for(int j=0;j<N-i-1;j++) {
+                System.out.print(" ");
+            }
+            for(int j=0;j<2*i+1;j++) {
+                System.out.print("*");
+            }
+            for(int j=0;j<N-i-1;j++) {
+                System.out.print(" ");
+            }
+
+            System.out.println();
+        }
+    }
     public static void main(String[] args) {
         pattern1(5);
         pattern2(5);
@@ -61,5 +77,6 @@ public class Pattern
         pattern4(5);
         pattern5(5);
         pattern6(5);
+        pattern7(5);
     }
 }
