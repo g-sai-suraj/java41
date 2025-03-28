@@ -19,7 +19,7 @@ public class Pattern
             }
         }
         private static void pattern3(int N) {
-            System.out.println("Printing a Right-Triangle-Number-Pattern of size-"+N+"....");
+            System.out.println("Printing a Right-Triangle-Number-Pattern-1 of size-"+N+"....");
             for(int i=1;i<=N;i++) {
                 for(int j=1;j<=i;j++) {
                     System.out.print(j+" ");
@@ -27,9 +27,19 @@ public class Pattern
                 System.out.println();
             }
         }
+        private static void pattern4(int N) {
+            System.out.println("Printing a Right-Triangle-Number-Pattern-2 of size-"+N+"....");
+            for(int i=1;i<=N;i++) {
+                for(int j=0;j<i;j++) {
+                    System.out.print(i+" ");
+                }
+                System.out.println();
+            }
+        }
     public static void main(String[] args) {
-        new Pattern().pattern1(5);
-        new Pattern().pattern2(5);
-        new Pattern().pattern3(5);
+        pattern1(5);
+        pattern2(5);
+        pattern3(5);
+        pattern4(5);
     }
 }
