@@ -45,11 +45,21 @@ public class Pattern
                 System.out.println();
             }
         }
+    private static void pattern6(int N) {
+        System.out.println("Printing Number-Pattern reversed right-triangle of size-"+N+"..");
+        for(int i=N;i>=1;i--) {
+            for(int j=1;j<=i;j++) {
+                System.out.print(j+" ");
+            }
+            System.out.println();
+        }
+    }
     public static void main(String[] args) {
         pattern1(5);
         pattern2(5);
         pattern3(5);
         pattern4(5);
         pattern5(5);
+        pattern6(5);
     }
 }
