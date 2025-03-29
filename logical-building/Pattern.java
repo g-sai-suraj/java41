@@ -55,7 +55,7 @@ public class Pattern
         }
     }
     private static void pattern7(int N) {
-        System.out.println("Printing *-Pattern rhombus of size-"+N+"..");
+        System.out.println("Printing *-Pattern triangle of size-"+N+"..");
         for(int i=0;i<N;i++) {
             for(int j=0;j<N-i-1;j++) {
                 System.out.print(" ");
@@ -70,6 +70,26 @@ public class Pattern
             System.out.println();
         }
     }
+    private static void pattern8(int N) {
+        System.out.println("Printing *-Pattern reversed triangle of size-"+N+"..");
+        // For Triangle-rows
+        for(int i=0;i<N;i++) {
+            // For Spaces
+            for(int j=0;j<i;j++) {
+                System.out.print(" ");
+            }
+            //For Stars
+            for(int j=0;j<2*N-(2*i+1);j++) {
+                System.out.print("*");
+            }
+            //For Spaces
+            for(int j=0;j<i;j++) {
+                System.out.print(" ");
+            }
+
+            System.out.println();
+        }
+    }
     public static void main(String[] args) {
         pattern1(5);
         pattern2(5);
@@ -78,5 +98,7 @@ public class Pattern
         pattern5(5);
         pattern6(5);
         pattern7(5);
+        pattern8(5);
+
     }
 }
