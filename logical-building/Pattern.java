@@ -119,6 +119,42 @@ public class Pattern
             System.out.println();
         }
     }
+    private static void pattern10(int N) {
+        System.out.println("Printing the *-pattern isosceles triangle of size-"+N+"...");
+        // For the upward triangle..
+        for(int i=1;i<=N;i++) {
+            for(int j=0;j<i;j++) {
+                System.out.print("* ");
+            }
+            System.out.println();
+        }
+        // For the downward-triangle..
+        for(int i=N-1;i>=1;i--) {
+            for(int j=0;j<i;j++) {
+                System.out.print("* ");
+            }
+            System.out.println();
+        }
+    }
+     private static void pattern11(int N) {
+        System.out.println("Printing a binary-triangle of size-"+N+"..");
+        int start = 1;
+        for(int i=0;i<N;i++) {
+            
+            if (i%2 ==0) start = 1;
+
+            else start = 0;
+
+            for(int j=0;j<=i;j++) {
+                System.out.print(start+" ");
+                start = 1 - start;
+            }
+
+
+            System.out.println();
+
+        }
+    }
     public static void main(String[] args) {
         pattern1(5);
         pattern2(5);
@@ -129,5 +165,7 @@ public class Pattern
         pattern7(5);
         pattern8(5);
         pattern9(5);
+        pattern10(5);
+        pattern11(5);
     }
 }
