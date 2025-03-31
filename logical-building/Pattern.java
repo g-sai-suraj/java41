@@ -1,3 +1,5 @@
+import java.util.*;
+
 public class Pattern
 {
     private static void pattern1(int N) {
@@ -155,7 +157,29 @@ public class Pattern
 
         }
     }
+    private static void pattern12(int N) {
+        int spaces = 2*(N-1);
+        System.out.println("Printing v-stage number pattern of size-"+N+"...");
+        for(int i=1;i<=N;i++) {
+            for(int j=1;j<=i;j++) {
+                System.out.print(j);
+            }
+            
+            for(int j=1;j<=spaces;j++) {
+                System.out.print(" ");
+            }
+    
+            for(int j=i;j>=1;j--) {
+                System.out.print(j);
+            }
+    
+            System.out.println();
+            spaces=spaces-2;
+        }
+    } 
     public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+       
         pattern1(5);
         pattern2(5);
         pattern3(5);
@@ -167,5 +191,7 @@ public class Pattern
         pattern9(5);
         pattern10(5);
         pattern11(5);
+        pattern12(5);
+        sc.close();
     }
 }
