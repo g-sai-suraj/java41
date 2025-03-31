@@ -188,6 +188,39 @@ public class Pattern
         System.out.println();
     }
     }
+    private static void pattern14(int N) {
+    System.out.println("Priting the right-angeled alphabet trinangle size-"+N+"..");
+    for(int i=1;i<=N;i++) {
+    char count = 'A';
+        for(int j=1;j<=i;j++) {
+            System.out.print(count+" ");
+            count++;
+        }
+        System.out.println();
+    }
+    }
+    private static void pattern15(int N) {
+        System.out.println("Priting the right-angeled alphabet trinangle size-"+N+"..");
+        char count='A';
+        for(int i=N;i>=1;i--) {
+            for(int j=1;j<=i;j++) {
+                System.out.print(count+" ");
+                
+            } count++;
+            System.out.println();
+        }
+        }
+        private static void pattern16(int N) {
+            System.out.println("Priting the right-angeled alphabet trinangle size-"+N+"..");
+            for(int i=1;i<=N;i++) {
+            char count = 'A';
+                for(int j=1;j<=i;j++) {
+                    System.out.print(count+" ");
+                    count++;
+                }
+                System.out.println();
+            }
+            }
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
        
@@ -204,6 +237,9 @@ public class Pattern
         pattern11(5);
         pattern12(5);
         pattern13(5);
+        pattern14(5);
+        pattern15(5);
+        pattern16(5);
         sc.close();
     }
 }
