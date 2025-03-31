@@ -177,6 +177,17 @@ public class Pattern
             spaces=spaces-2;
         }
     } 
+    private static void pattern13(int N) {
+        System.out.println("Priting the right-angeled trinangle number size-"+N+"..");
+        int count = 1;
+    for(int i=1;i<=N;i++) {
+        for(int j=1;j<=i;j++) {
+            System.out.print(count+" ");
+            count++;
+        }
+        System.out.println();
+    }
+    }
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
        
@@ -192,6 +203,7 @@ public class Pattern
         pattern10(5);
         pattern11(5);
         pattern12(5);
+        pattern13(5);
         sc.close();
     }
 }
