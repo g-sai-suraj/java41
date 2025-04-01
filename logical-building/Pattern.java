@@ -221,6 +221,30 @@ public class Pattern
                 System.out.println();
             }
             }
+        private static void pattern17(int N) {
+            System.out.println("Printing the breakpoint triangle of size-"+N+"..");
+            for(int i=0;i<N;i++) {
+
+                for(int j=0;j<N-i-1;j++) {
+                    System.out.print(" ");
+                }
+                char count='A';
+                int breakpoint = (2*i+1) / 2;
+
+                for(int j=1;j<=2*i+1;j++) {
+
+                    System.out.print(count);
+                    if(j<=breakpoint) count++;
+                    else count--;
+                }
+
+                for(int j=0;j<N-i-1;j++) {
+                    System.out.print(" ");
+                }
+
+                System.out.println();
+            }
+        }
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
        
@@ -240,6 +264,7 @@ public class Pattern
         pattern14(5);
         pattern15(5);
         pattern16(5);
+        pattern17(5);
         sc.close();
     }
 }
